@@ -84,3 +84,11 @@ aside {
 .profile img {
   max-width: 200px;
 }
+
+aside {
+  flex: 1;
+}
+
+.profile img {
+  max-width: 200px;
+}
