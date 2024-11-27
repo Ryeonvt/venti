@@ -12,6 +12,7 @@ body {
   background: url("/venti/img/venti.jpg");
   background-size: cover;
   background-position: center;
+  cursor: url("/venti/img/cursor.png"), auto;
 }
 
 .header {
@@ -25,6 +26,7 @@ body {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+  cursor: url("/venti/img/cursor.png"), auto;
 }
 
 .profile card {
@@ -40,10 +42,12 @@ body {
   font-weight: 500;
   text-decoration: none;
   margin-left: 40px;
+  cursor: url("/venti/img/cursor.png"), auto;
 }
 
 nav a:hover {
   font-weight: bold;
+  cursor: url("/venti/img/cursor.png"), auto;
 }
 
 #content {
@@ -56,9 +60,10 @@ nav a:hover {
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 20px;
   background-color: white;
+  columns: row;
 }
 
 .featured-image {
@@ -74,6 +79,7 @@ main {
   display: flex;
   gap: 2rem;
   padding-inline: 20px;
+  padding-bottom: 20px;
 }
 
 aside {
@@ -81,15 +87,8 @@ aside {
 }
 
 .profile img {
-  max-width: 200px;
-}
-
-aside {
-  flex: 1;
-}
-
-.profile img {
-  max-width: 200px;
+  max-width: 250px;
+  border-radius: 10px;
 }
 
 .ryeon {
@@ -105,4 +104,61 @@ h3 {
 
 .profile header {
   text-align: center;
+}
+
+.table {
+  text-align: left;
+}
+
+.fa-instagram {
+  font-size: 20px;
+  padding: 0px;
+}
+
+.fa-github {
+  font-size: 20px;
+}
+
+.fa-envelope {
+  font-size: 20px;
+}
+
+footer {
+  padding: 20px 10px;
+  color: black;
+  background-color: white;
+
+  text-align: center;
+  font-weight: bold;
+}
+
+.fuyu-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.fuyu {
+  width: 325px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.fuyu-haru {
+  padding: 20px;
+}
+
+.fuyu-haru h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
 }
