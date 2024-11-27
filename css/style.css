@@ -1,13 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
   font-family: "Quicksand", sans-serif;
 }
 
 body {
   min-height: 100vh;
-  background: url("/venti/img/venti.jpg") no-repeat;
+  background: url("/venti/img/venti.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -46,7 +48,7 @@ nav a:hover {
 
 #content {
   flex: 5;
-  background-color: greenyellow;
+  background-color: transparent;
   display: flex;
   flex-flow: column nowrap;
   gap: 1rem 2rem;
@@ -56,7 +58,9 @@ nav a:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   padding: 20px;
+  background-color: white;
 }
+
 .featured-image {
   width: 50%;
   max-height: 300px;
@@ -67,7 +71,14 @@ nav a:hover {
 
 main {
   padding-top: 100px;
-
   display: flex;
   gap: 2rem;
+}
+
+aside {
+  flex: 1;
+}
+
+.profile img {
+  max-width: 200px;
 }
