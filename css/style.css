@@ -12,7 +12,6 @@ body {
   background: url("/venti/img/venti.jpg");
   background-size: cover;
   background-position: center;
-  cursor: url("/venti/img/cursor.png"), auto;
 }
 
 .header {
@@ -26,7 +25,6 @@ body {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
-  cursor: url("/venti/img/cursor.png"), auto;
 }
 
 .profile card {
@@ -42,12 +40,10 @@ body {
   font-weight: 500;
   text-decoration: none;
   margin-left: 40px;
-  cursor: url("/venti/img/cursor.png"), auto;
 }
 
 nav a:hover {
   font-weight: bold;
-  cursor: url("/venti/img/cursor.png"), auto;
 }
 
 #content {
@@ -87,6 +83,7 @@ aside {
 }
 
 .profile img {
+  padding-top: 5px;
   max-width: 250px;
   border-radius: 10px;
 }
@@ -98,6 +95,10 @@ aside {
   font-weight: 700;
 }
 
+h2 {
+  padding-inline: 45px;
+  font-size: 25px;
+}
 h3 {
   text-align: center;
 }
@@ -142,23 +143,146 @@ footer {
 }
 
 .fuyu {
+  line-height: 1.8;
   width: 325px;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
-.card img {
+.fuyu img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-.fuyu-haru {
+.fuyu-card {
   padding: 20px;
 }
 
-.fuyu-haru h1 {
+.fuyu-card h1 {
   font-size: 20px;
   margin-bottom: 10px;
+}
+
+#ch {
+  display: none;
+}
+
+#ca {
+  display: none;
+}
+
+#cb {
+  display: none;
+}
+
+#cc {
+  display: none;
+}
+
+#cd {
+  display: none;
+}
+
+#ce {
+  display: none;
+}
+
+#cf {
+  display: none;
+}
+
+#cg {
+  display: none;
+}
+
+#ci {
+  display: none;
+}
+
+#ci:checked ~ .natsu {
+  display: block;
+}
+
+#ci:checked ~ label {
+  display: none;
+}
+
+#cg:checked ~ .natsu {
+  display: block;
+}
+
+#cg:checked ~ label {
+  display: none;
+}
+
+#cf:checked ~ .natsu {
+  display: block;
+}
+
+#cf:checked ~ label {
+  display: none;
+}
+
+#ce:checked ~ .natsu {
+  display: block;
+}
+
+#ce:checked ~ label {
+  display: none;
+}
+
+#cd:checked ~ .natsu {
+  display: block;
+}
+
+#cd:checked ~ label {
+  display: none;
+}
+
+#cc:checked ~ .natsu {
+  display: block;
+}
+
+#cc:checked ~ label {
+  display: none;
+}
+
+#cb:checked ~ .natsu {
+  display: block;
+}
+
+#cb:checked ~ label {
+  display: none;
+}
+
+#ca:checked ~ .natsu {
+  display: block;
+}
+
+#ca:checked ~ label {
+  display: none;
+}
+
+#ch:checked ~ .natsu {
+  display: block;
+}
+
+#ch:checked ~ label {
+  display: none;
+}
+
+.natsu {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  padding: 3px 13px;
+  border-radius: 3px;
+  margin-top: 12px;
 }
